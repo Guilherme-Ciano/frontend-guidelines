@@ -1,0 +1,6 @@
+This project requires:
+
+- Tailwind CSS
+- shadcn/ui
+
+If they are not initialized, STOP and initialize them.
