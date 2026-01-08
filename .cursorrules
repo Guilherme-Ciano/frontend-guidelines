@@ -1,0 +1,18 @@
+This project is strictly opinionated.
+
+- React Query is used ONLY in services
+- Zustand is ONLY for UI/global state
+- Forms use react-hook-form + zod
+- No API calls inside components
+- shadcn components are wrapped, never used directly
+- Tailwind classes only inside shared/ui
+- If a similar pattern exists, copy it exactly
+- Do not invent abstractions
+
+Composite UI components MUST follow composition pattern.
+
+- Header, Body, Footer are separate files
+- index.ts exports a composed component
+- <Card.Header /> is mandatory
+- Large components in a single file are forbidden
+- Follow existing UI components exactly
